@@ -95,11 +95,11 @@ Default: { }
 Type: `string`<br>
 Default: `undefined`
 
-This can be used as a secure way to store sensitive data by prompting the user for the password before loading the store.
+This can theoretically be used as a secure way to store sensitive data by prompting the user for the password before loading the store. **I do not guarantee the security of the implementation**.
 
 Note that this should not be used for security purposes **if the encryption key is inside a plain-text Electron app**. In this case, its main use would be for obscurity. If a user looks through the config directory and finds the config file, since it's just a JSON file, they may be tempted to modify it. By providing an encryption key, the file will be obfuscated, which should hopefully deter any users from doing so.
 
-Even so, it has the added bonus of ensuring the config file's integrity. If the file is changed in any way, the decryption will not work, in which case  you can specify the option `useAsIntegrityCheck` to reload the store back to its default state.
+Even so, it has the added bonus of ensuring the config file's integrity. If the file is changed in any way, the decryption will not work, in which case you can specify the option `useAsIntegrityCheck` to reload the store back to its default state.
 
 When specified, the store will be encrypted using AES encryption algorithm.
 
