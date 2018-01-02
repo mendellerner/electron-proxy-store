@@ -1,0 +1,35 @@
+{
+  "name": "electron-proxy-store",
+  "version": "1.0.0",
+  "description": "Persistent, auto-saving data store for Electron utilizing the modern JavaScript Proxy handlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParmesanPangolin/electron-proxy-store.git"
+  },
+  "keywords": [
+    "electron-proxy-store",
+    "proxies",
+    "electron",
+    "persistent-data-storage",
+    "auto-saving",
+    "atomic-save"
+  ],
+  "author": "ParmesanPangolin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ParmesanPangolin/electron-proxy-store/issues"
+  },
+  "homepage": "https://github.com/ParmesanPangolin/electron-proxy-store",
+  
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {
+    "crypto-js": "^3.1.9-1",
+    "electron": "^1.7.10"
+  }
+}
