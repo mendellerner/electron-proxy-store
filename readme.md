@@ -84,7 +84,7 @@ Default: [`app.getPath('userData')`](http://electron.atom.io/docs/api/app/#appge
 
 Storage file location. *Don't specify this unless absolutely necessary!*
 
-If a relative path, it's relative to the default cwd. For example, `{cwd: 'unicorn'}` would result in a storage file in `~/Library/Application Support/App Name/unicorn`.
+If a relative path, it's relative to the default cwd. For example, `{path: 'unicorn'}` would result in a storage file in `~/Library/Application Support/App Name/unicorn`.
 
 #### defaults
 Type: `object`<br>
