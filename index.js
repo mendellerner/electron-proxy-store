@@ -68,9 +68,7 @@ class Store {
     }
     backup(location) {
         let mainLocation = this.path
-        console.log(location)
         this.path = path.join(location, this.name + '.json')
-        console.log(this.path)
         this.save()
         this.path = mainLocation
     }
